@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taka3 লগইন নিবন্ধন করুন Taka3 app ডাউনলোড করুন বাংলাদেশ</title>
+    
+    <!-- গুগল ইনডেক্স ও এসইও অপ্টিমাইজেশন ট্যাগ -->
+    <meta name="description" content="Taka3 লগইন করুন, Taka3 অ্যাপ ডাউনলোড করুন এবং মোবাইল ব্যবহারকারীদের জন্য Taka3 অ্যাপের বৈশিষ্ট্যগুলো উপভোগ করুন। Taka3.cam এর অফিসিয়াল সাইট।">
+    <meta name="keywords" content="Taka3, Taka3 login, Taka3 register, Taka3 app download, Taka3.cam, Taka3 Bangladesh">
+    <meta name="robots" content="index, follow">
+    
+    <!-- ক্যানোনিকাল এবং অল্টারনেট ল্যাঙ্গুয়েজ ট্যাগ -->
+    <link rel="canonical" href="https://taka3.cam/">
+    <link rel="alternate" href="https://taka3.cam/" hreflang="bn">
+    <link rel="alternate" href="https://taka3.cam/" hreflang="x-default">
+    
+    <!-- ব্রাউজার ট্যাব বা ফেভিকন (12901_2.jpg) -->
+    <link rel="icon" type="image/jpeg" id="faviconTag" href="">
+    
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #8b0000;
+            background-image: linear-gradient(135deg, #cc0033 0%, #8b0000 100%);
+            background-attachment: fixed;
+            color: #ffffff;
+            padding-top: 112px;
+            padding-bottom: 75px;
+        }
+
+        /* Fixed Top Container */
+        .fixed-top-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            max-width: 480px;
+            margin: 0 auto;
+            z-index: 1000;
+            background: rgba(139, 0, 0, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 204, 0, 0.25);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Top App Download Banner */
+        .top-app-banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 10px;
+            background: rgba(115, 0, 0, 0.9);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .banner-app-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .banner-app-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid rgba(255, 204, 0, 0.4);
+        }
+
+        .banner-app-title {
+            font-size: 15px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .banner-stars {
+            color: #ffc107;
+            font-size: 12px;
+        }
+
+        .banner-download-btn {
+            background: linear-gradient(135deg, #b8860b 0%, #ffd700 50%, #daa520 100%);
+            color: #1a0000;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 15px;
+            text-decoration: none;
+            margin-left: auto;
+            margin-right: 8px;
+            box-shadow: 0 2px 10px rgba(255, 215, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            animation: bounceGlow 1.5s infinite;
+        }
+
+        @keyframes bounceGlow {
+            0%, 100% {
+                transform: translateY(0);
+                box-shadow: 0 2px 8px rgba(255, 215, 0, 0.4);
+            }
+            50% {
+                transform: translateY(-3px);
+                box-shadow: 0 4px 14px rgba(255, 223, 0, 0.8);
+            }
+        }
+
+        .banner-close-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: none;
+            color: #b0b0b0;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Main Header Bar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(139, 0, 0, 0.95);
+            padding: 10px 14px;
+        }
+
+        .logo-img {
+            height: 32px;
+            width: auto;
+            max-width: 110px;
+            object-fit: contain;
+        }
+
+        .auth-buttons {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-signin {
+            background: linear-gradient(135deg, #b8860b 0%, #ffd700 50%, #daa520 100%);
+            color: #1a0000;
+            padding: 7px 14px;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 15px;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(255, 215, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-signup {
+            background: linear-gradient(135deg, #b8860b 0%, #ffd700 50%, #daa520 100%);
+            color: #1a0000;
+            padding: 7px 14px;
+            border-radius: 6px;
+            font-weight: 900;
+            font-size: 15px;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(255, 215, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        /* Main Container */
+        .container {
+            padding: 12px;
+            max-width: 480px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .promo-banner-card {
+            background: linear-gradient(135deg, #b30000 0%, #800000 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 204, 0, 0.3);
+            display: block;
+            text-decoration: none;
+        }
+        .promo-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Category Scroll Bar */
+        .category-scroll {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+            scrollbar-width: none;
+        }
+        .category-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .cat-item {
+            min-width: 95px;
+            height: 75px;
+            background: linear-gradient(145deg, #990000 0%, #660000 100%);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 204, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .cat-item.active {
+            border-color: #ffcc00;
+            color: #ffcc00;
+        }
+
+        /* Game Grids */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .game-card {
+            background: #730000;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 204, 0, 0.2);
+            text-decoration: none;
+            display: block;
+        }
+        .game-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            display: block;
+        }
+        .game-title-bar {
+            padding: 8px 10px;
+            background: #590000;
+            font-size: 14px;
+            text-align: center;
+            color: #ffcc00;
+            font-weight: 700;
+        }
+
+        /* Info Section */
+        .info-section {
+            background: linear-gradient(145deg, #990000 0%, #660000 100%);
+            border-radius: 12px;
+            padding: 18px;
+            border: 1px solid rgba(255, 204, 0, 0.3);
+            margin-bottom: 15px;
+        }
+        .info-section h3 {
+            font-size: 24px;
+            color: #ffcc00;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(255,204,0,0.3);
+            padding-bottom: 8px;
+            font-weight: 800;
+        }
+        .info-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .info-list li {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #f3f4f6;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 14px 16px;
+            border-radius: 8px;
+            border-left: 5px solid #ffcc00;
+            font-weight: 600;
+        }
+
+        /* SEO Content Section */
+        .seo-content-box {
+            background: linear-gradient(145deg, #990000 0%, #660000 100%);
+            border-radius: 12px;
+            padding: 22px;
+            border: 1px solid rgba(255, 204, 0, 0.3);
+            color: #f3f4f6;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+        
+        .seo-content-box h1 {
+            font-size: 38px;
+            font-weight: 900;
+            color: #ffffff;
+            line-height: 1.25;
+        }
+        .seo-content-box h1 span {
+            color: #ffcc00;
+        }
+        
+        .seo-content-box h2 {
+            font-size: 30px;
+            font-weight: 800;
+            color: #ffcc00;
+            margin-top: 12px;
+            line-height: 1.35;
+        }
+
+        .seo-content-box h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffd700;
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+
+        .seo-content-box p {
+            font-size: 19px;
+            color: #f3f4f6;
+            line-height: 1.7;
+            font-weight: 600;
+        }
+
+        .seo-content-box ul {
+            padding-left: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .seo-content-box ul li {
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 16px;
+            color: #ffd700;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        /* Bottom Navigation Bar */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            max-width: 480px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, #b30000 0%, #730000 100%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            border-top: 1px solid rgba(255, 204, 0, 0.3);
+            z-index: 1000;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 700;
+            flex: 1;
+            gap: 3px;
+        }
+
+        .nav-item i {
+            font-size: 18px;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        const globalImageName = "12901_2.jpg";
+        const headerLogoName = "12911_5.png";
+    </script>
+
+    <!-- Fixed Top Container -->
+    <div class="fixed-top-container" id="topContainer">
+        <div class="top-app-banner" id="appBanner">
+            <div class="banner-app-left">
+                <script>document.write('<img src="' + globalImageName + '" alt="App Icon" class="banner-app-icon">');</script>
+                <div>
+                    <div class="banner-app-title">Taka3</div>
+                    <div class="banner-stars">★★★★★</div>
+                </div>
+            </div>
+            <a href="http://www.88fb2.vip/?r=rof8176" class="banner-download-btn">ডাউনলোড করুন</a>
+            <button class="banner-close-btn" onclick="closeBanner()">×</button>
+        </div>
+
+        <header>
+            <a href="http://www.88fb2.vip/?r=rof8176">
+                <script>document.write('<img src="' + headerLogoName + '" alt="Logo" class="logo-img">');</script>
+            </a>
+            <div class="auth-buttons">
+                <a href="http://www.88fb2.vip/?r=rof8176" class="btn-signin">লগইন</a>
+                <a href="http://www.88fb2.vip/?r=rof8176" class="btn-signup">নিবন্ধন</a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        <!-- প্রমোশনাল ব্যানার -->
+        <a href="http://www.88fb2.vip/?r=rof8176" class="promo-banner-card">
+            <script>document.write('<img src="' + globalImageName + '" alt="Promo" class="promo-img">');</script>
+        </a>
+
+        <!-- Category Scroll Bar -->
+        <div class="category-scroll">
+            <a href="http://www.88fb2.vip/?r=rof8176" class="cat-item active">
+                <span>⭐ ফিচারড</span>
+            </a>
+            <a href="http://www.88fb2.vip/?r=rof8176" class="cat-item">
+                <span>🎰 স্লট</span>
+            </a>
+            <a href="http://www.88fb2.vip/?r=rof8176" class="cat-item">
+                <span>⚽ স্পোর্টস</span>
+            </a>
+            <a href="http://www.88fb2.vip/?r=rof8176" class="cat-item">
+                <span>🐟 ফিশিং</span>
+            </a>
+        </div>
+
+        <!-- Game Grids -->
+        <div class="game-grid">
+            <a href="http://www.88fb2.vip/?r=rof8176" class="game-card">
+                <script>document.write('<img src="' + globalImageName + '" alt="Aviator">');</script>
+                <div class="game-title-bar">এভিয়েটর</div>
+            </a>
+            <a href="http://www.88fb2.vip/?r=rof8176" class="game-card">
+                <script>document.write('<img src="' + globalImageName + '" alt="Super Ace">');</script>
+                <div class="game-title-bar">সুপার এস</div>
+            </a>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section">
+            <h3>Taka3 বিশেষ অফার ও নিয়মাবলী</h3>
+            <ul class="info-list">
+                <li><strong>ভিআইপি পুরস্কার:</strong> বৈধ বেটের মাধ্যমে আপনার ভিআইপি লেভেল বাড়িয়ে নিন এবং সাপ্তাহিক সর্বোচ্চ ৳400,000 পর্যন্ত বোনাস উপভোগ করুন।</li>
+                <li><strong>সদস্য কার্নিভাল:</strong> প্রতি মাসের ৯, ১৯ ও ২৯ তারিখে মোট ৳7,000,000,000 পর্যন্ত র‍্যান্ডম ক্যাশ প্রাইজ জিতুন।</li>
+                <li><strong>বন্ধু আমন্ত্রণ:</strong> বন্ধুদের আমন্ত্রণ জানান এবং প্রতিটি আমন্ত্রণে আকর্ষণীয় কমিশন পান।</li>
+            </ul>
+        </div>
+
+        <!-- SEO Content Box -->
+        <div class="seo-content-box">
+            <h1>Download the <br><span>Taka3</span> <br>Mobile App</h1>
+            
+            <p>Login to Taka3 Download</p>
+            
+            <h2>Taka3 App</h2>
+            
+            <h2>App Features for Mobile Users</h2>
+            
+            <p>Taka3 অ্যাপ ডাউনলোড করুন এবং মোবাইল ব্যবহারকারীদের জন্য Taka3 অ্যাপের বৈশিষ্ট্যগুলো উপভোগ করুন। Taka3 অ্যাপটি মোবাইল-বান্ধব লেআউটে Taka3 প্ল্যাটফর্মের মূল ক্ষেত্রগুলোকে সাজায়। ব্যবহারকারীরা Taka3 কন্টেন্ট ব্রাউজ করতে পারেন, তাদের Taka3 অ্যাকাউন্ট ড্যাশবোর্ড খুলতে পারেন এবং Taka3 সাপোর্ট লিংক ব্যবহার করতে পারেন।</p>
+            
+            <p>ছোট স্ক্রিনে Taka3 এর সাধারণ কাজগুলো সহজ করার জন্য টাচ-ভিত্তিক মেনুগুলো সাজানো হয়েছে। Taka3 অ্যাপটি স্থানীয়ভাবে নির্বাচিত ডিসপ্লে সেটিংস মনে রাখতে পারে, অন্যদিকে Taka3 অ্যাকাউন্টের বিবরণ এবং উপলব্ধ পরিষেবাগুলো Taka3 অনলাইন অ্যাকাউন্টের সাথে সংযুক্ত থাকে।</p>
+            
+            <p>একটি স্থিতিশীল ইন্টারনেট সংযোগ Taka3 পেজ, Taka3 অ্যাকাউন্ট আপডেট এবং লাইভ তথ্য সঠিকভাবে লোড করতে সাহায্য করে। Taka3 ব্যবহারকারীরা প্রয়োজনে Wi-Fi এবং মোবাইল ডেটার মধ্যে স্যুইচ করতে পারেন।</p>
+
+            <h3>Taka3 APK কীভাবে ডাউনলোড এবং ইনস্টল করবেন</h3>
+            <p>যাচাইকৃত Taka3 ওয়েবসাইট খুলে Taka3 অ্যান্ড্রয়েড অ্যাপ ডাউনলোড এলাকা খুঁজে বের করুন। কেবল অফিশিয়াল Taka3 পেজ থেকেই Taka3 APK ডাউনলোড করুন।</p>
+            <p>Taka3 ফাইল ডাউনলোড শেষ হলে ব্রাউজারের ডাউনলোড তালিকা বা ফোল্ডার থেকে এটি খুলুন। Taka3 অ্যাপ ইনস্টল করার অনুমতি চেয়ে অ্যান্ড্রয়েড একটি প্রম্পট দেখাতে পারে।</p>
+            <p>শুধুমাত্র নির্দিষ্ট উৎসের জন্য ইনস্টলেশনের অনুমতি দিন, তারপরে Taka3 ফাইলে ফিরে যান। ইনস্টলেশনের পরে, Taka3 অ্যাপ আইকনটি ডিভাইসের হোম স্ক্রিনে পাওয়া উচিত।</p>
+            <p>যদি Taka3 ইনস্টলেশন শুরু না হয়, তবে চেক করুন যে Taka3 ফাইলটি সম্পূর্ণ ডাউনলোড হয়েছে কিনা এবং পর্যাপ্ত স্টোরেজ খালি আছে কিনা।</p>
+
+            <h3>অ্যান্ড্রয়েড, আইফোন এবং Taka3 ব্রাউজার অ্যাক্সেস</h3>
+            <p>Taka3 APK সামঞ্জস্যপূর্ণ অ্যান্ড্রয়েড ফোন এবং ট্যাবলেটের জন্য তৈরি। Taka3 ইনস্টল করা অ্যাপ হোম স্ক্রিন থেকে সরাসরি শর্টকাট প্রদান করতে পারে।</p>
+            <p>আইফোন এবং আইপ্যাড ডিভাইসে Taka3 APK ফাইল সরাসরি ব্যবহার করা যায় না। Apple ব্যবহারকারীরা ব্রাউজারের মাধ্যমে অফিশিয়াল ওয়েবসাইট খুলতে পারেন।</p>
+            <p>যেসব ব্যবহারকারী Taka3 অ্যাপ ইনস্টল করতে পছন্দ করেন না, তাদের জন্য ব্রাউজারের মাধ্যমে মোবাইল সাইট খোলা যেতে পারে।</p>
+
+            <h3>Taka3 লগইন এবং অ্যাকাউন্ট অ্যাক্সেস</h3>
+            <p>বিদ্যমান ব্যবহারকারীরা অফিশিয়াল ওয়েবসাইটে ব্যবহৃত একই অ্যাকাউন্টের বিবরণ দিয়ে অ্যাপে সাইন ইন করতে পারেন। অ্যাকাউন্টের তথ্য লগিনের সাথে যুক্ত থাকে।</p>
+            <p>অ্যাকাউন্ট তৈরি করার সময় নিবন্ধনের বিবরণ সাবধানে লিখুন। অ্যাকাউন্ট পুনরুদ্ধার এবং যাচাইকরণ অনুরোধের জন্য সঠিক তথ্য গুরুত্বপূর্ণ হতে পারে।</p>
+            <p>লগইন বিবরণ ভুলে গেলে, অফিশিয়াল সাইন-ইন পেজে প্রদত্ত পুনরুদ্ধার বিকল্পটি ব্যবহার করুন।</p>
+
+            <h3>Taka3 অ্যাপ আপডেট করা এবং সমস্যা সমাধান</h3>
+            <p>কোনো আপডেট উপলব্ধ হলে অফিশিয়াল পেজ চেক করুন। যাচাইকৃত উৎস থেকে লেটেস্ট Taka3 APK ডাউনলোড করলে বর্তমান সংস্করণ পাওয়া যেতে পারে।</p>
+            <p>আপডেট করার আগে নিশ্চিত করুন যে ডিভাইসের পর্যাপ্ত স্টোরেজ এবং নির্ভরযোগ্য সংযোগ আছে। নতুন সাইন-ইন প্রয়োজন হলে ব্যবহারকারীদের বিবরণ প্রস্তুত রাখা উচিত।</p>
+            <p>অ্যাপটি ধীরে লোড হলে বা বন্ধ হয়ে গেলে, ডিভাইস রিস্টার্ট করুন এবং সংযোগ পরীক্ষা করুন। সমস্যা অব্যাহত থাকলে, অফিশিয়াল মোবাইল ওয়েবসাইটের মাধ্যমে অ্যাক্সেস তুলনা করুন।</p>
+
+            <h3>নিরাপদ Taka3 অ্যাপ ডাউনলোড নির্দেশিকা</h3>
+            <p>ডাউনলোড, আপডেট এবং অ্যাকাউন্ট অ্যাক্সেসের জন্য অফিশিয়াল ওয়েবসাইটটিকে শুরুর বিন্দু হিসেবে ব্যবহার করুন। তথ্য দেওয়ার আগে ওয়েবসাইটের ঠিকানা চেক করুন। স্ক্রিন লক দিয়ে ফোন সুরক্ষিত রাখুন এবং শেয়ার করা ডিভাইসে পাসওয়ার্ড সেভ করা থেকে বিরত থাকুন। পরিবর্তিত অ্যাপ ফাইল ইনস্টল করবেন না বা অজানা অ্যাপ্লিকেশনগুলোকে অনুমতি দেবেন না। সহায়তার জন্য অফিশিয়াল চ্যানেলের সাথে যোগাযোগ করুন।</p>
+
+            <h3>সচরাচর জিজ্ঞাস্য প্রশ্ন (FAQ)</h3>
+            <ul>
+                <li><strong>১. আমি কোথায় অফিশিয়াল অ্যাপ ডাউনলোড করতে পারি?</strong> যাচাইকৃত ওয়েবসাইট খুলুন এবং অফিশিয়াল অ্যাপ সেকশন থেকে ডাউনলোড করুন।</li>
+                <li><strong>২. আমি কি অ্যাপে আমার বিদ্যমান অ্যাকাউন্ট ব্যবহার করতে পারি?</strong> হ্যাঁ। অ্যাপ এবং অফিশিয়াল ওয়েবসাইট একই অ্যাকাউন্ট লগইন ব্যবহার করে।</li>
+                <li><strong>৩. আমি কি আইফোনে Taka3 APK ইনস্টল করতে পারি?</strong> না। আইফোন ব্যবহারকারীরা Safari-এর মাধ্যমে অফিশিয়াল মোবাইল ওয়েবসাইট ব্যবহার করতে পারেন।</li>
+                <li><strong>৪. ব্যবহার করার জন্য কি অ্যাপ ইনস্টল করা বাধ্যতামূলক?</strong> না। সমর্থিত ব্রাউজারে অফিশিয়াল মোবাইল ওয়েবসাইট খোলা যেতে পারে।</li>
+                <li><strong>৫. আমি কীভাবে আপডেট করব?</strong> অফিশিয়াল অ্যাপ পেজে যান এবং লেটেস্ট APK ডাউনলোড করুন।</li>
+                <li><strong>৬. APK কেন ইনস্টল হবে না?</strong> উপলব্ধ স্টোরেজ চেক করুন এবং ইনস্টলেশন অনুমতি নিশ্চিত করুন।</li>
+                <li><strong>৭. আমি কি শেয়ার করা ফোনে অ্যাপ ব্যবহার করতে পারি?</strong> ব্যক্তিগত ডিভাইস ব্যবহার করা নিরাপদ। কাজ শেষ হলে লগ আউট করুন।</li>
+                <li><strong>৮. পাসওয়ার্ড ভুলে গেলে আমার কী করা উচিত?</strong> অফিশিয়াল লগইন পেজে রিকভারি অপশন ব্যবহার করুন।</li>
+                <li><strong>৯. অ্যাপ ডাউনলোড নিরাপদ কিনা তা আমি কীভাবে যাচাই করব?</strong> শুধুমাত্র যাচাইকৃত ওয়েবসাইটের মাধ্যমে ডাউনলোড করুন।</li>
+                <li><strong>১০. অ্যাপ না খুললে আমার কী করা উচিত?</strong> ডিভাইস রিস্টার্ট করুন এবং ইন্টারনেট সংযোগ চেক করুন।</li>
+            </ul>
+
+            <p>Taka3 - গেম, স্পোর্টস, বোনাস এবং মোবাইল অ্যাক্সেস অন্বেষণ করুন।</p>
+            <p class="footer-note">সর্বস্বত্ব সংরক্ষিত © Taka3。<br>১৮+ শুধুমাত্র। দায়িত্ব নিয়ে খেলুন।</p>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="http://www.88fb2.vip/?r=rof8176" class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            <span>হোম</span>
+        </a>
+        <a href="http://www.88fb2.vip/?r=rof8176" class="nav-item">
+            <i class="fa-solid fa-gift"></i>
+            <span>প্রমোশন</span>
+        </a>
+        <a href="http://www.88fb2.vip/?r=rof8176" class="nav-item">
+            <i class="fa-solid fa-users"></i>
+            <span>আমন্ত্রণ</span>
+        </a>
+        <a href="http://www.88fb2.vip/?r=rof8176" class="nav-item">
+            <i class="fa-solid fa-wallet"></i>
+            <span>ডিপোজিট</span>
+        </a>
+        <a href="http://www.88fb2.vip/?r=rof8176" class="nav-item">
+            <i class="fa-solid fa-user"></i>
+            <span>সদস্য</span>
+        </a>
+    </nav>
+
+    <script>
+        document.getElementById('faviconTag').href = globalImageName;
+
+        function closeBanner() {
+            const banner = document.getElementById('appBanner');
+            if (banner) {
+                banner.style.display = 'none';
+                document.body.style.paddingTop = '65px';
+            }
+        }
+    </script>
+</body>
+</html>
